@@ -1,0 +1,29 @@
+<!--The following are the daily temperature recordings of NEWYORK city (In Fahrenheit) 
+55,62,68,74,59,45,41,58,60,67,65,78,82,88,91,92,90,93,87,80,78,79,72,68,61,59,55,65 
+Your JavaScript program should count and print the number of HOT days (High 
+Temperature: 85 or higher), the number of PLEASANT days (High temperature: 60-84) 
+and the number of COLD days (High temperature<60) in the city. It should also display 
+the category of each temperature in an HTML Table. -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+            <label for="temp">Enter temeperature : </label>
+            <br>
+            <input id="temp" type="number">
+            <br>
+            <br>
+            <button onclick="weather()" type="submit">Check Whether</button>
+            <br>
+            <label>COLD DAYS</label>
+            <input id="cold" type="number" readonly>
+            <br><br>
+            <label>PLEASANT DAYS</label>
+            <input id="hot" type="number" readonly>
+            <br><br>
+            <label>HOT DAYS</label>
+            <input id="pleasant" type="number" readonly>
+            <br><br>
+            <script src="JS1.1.js"></script>
+    </body>
+</html>

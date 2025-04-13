@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Grocery Order Form</h2>
+
+        <form id="orderForm">
+            <label>Customer Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <label>Phone Number</label>
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <h3>Products</h3>
+
+            <div class="product">
+                <input type="checkbox" class="product-checkbox" id="apple" value="Apple">
+                <label for="apple">Apple - $10 per kg</label>
+                <input type="number" class="quantity" id="appleQty" min="0" placeholder="kg">
+            </div>
+
+            <div class="product">
+                <input type="checkbox" class="product-checkbox" id="banana" value="Banana">
+                <label for="banana">Banana - $5 per kg</label>
+                <input type="number" class="quantity" id="bananaQty" min="0" placeholder="kg">
+            </div>
+
+            <div class="product">
+                <input type="checkbox" class="product-checkbox" id="avocado" value="Avocado">
+                <label for="avocado">Avocado - $7 per kg</label>
+                <input type="number" class="quantity" id="avocadoQty" min="0" placeholder="kg">
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

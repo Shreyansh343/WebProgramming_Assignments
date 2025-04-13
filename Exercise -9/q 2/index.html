@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            .btn {
+                 background-color: #4CAF50; 
+                 color: white;
+                 padding: 12px 24px; 
+                 border: none; 
+                 border-radius: 5px; 
+                 cursor: pointer;
+                 font-size: 16px; 
+                 transition: background-color 0.3s ease; 
+            }
+            
+          .seat{
+                 width: 50%;
+                 margin: 0 auto;
+                 text-align: center;
+                 background-color:cadetblue; 
+            }
+</style>
+        </style>
+
+    </head>
+    <body>
+        <h1><b>TICKET BOOKING SYSTEM</b></h1>
+        <label class="label" for="name"><b>Enter Your Name</b></label>;
+        <br>
+        <input id="name" type="text">
+        <br><br>
+        <label class="label" for="class">Select Your Class</label>
+        <br>
+        <input id="class" type="number">
+        <br><br>
+        <h2><b>BOOK YOUR SEAT</b></h2>
+        <button class="btn" onclick="assign()">BOOK SEAT</button>
+        <br><br>
+        <h3><b>THE GIVEN SEAT HAS BEEN ALOTTED TO YOU</b></h3>
+        <p class="seat" id = "output"></p>
+        <script src="JS2.1.js"></script>
+        <br><br><br><br>
+        <footer><p>
+           <b> THANK YOU FOR AVAILING OUR SERVICES.</b>
+        </p></footer>
+    </body>
+</html>
