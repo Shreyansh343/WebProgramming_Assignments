@@ -1,0 +1,15 @@
+
+.list li:first-letter {
+    text-transform: capitalize;
+  }
+  
+ 
+  .list {
+    list-style-type: circle;
+    color: gray;
+  }
+  
+  .list li {
+    color: blue;
+  }
+  

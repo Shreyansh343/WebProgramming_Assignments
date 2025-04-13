@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media</title>
+</head>
+<body>
+
+    <div style="display: flex; gap: 20px;">
+        <div style="float: left;">
+                    <h2>Audio</h2>
+            My harmonica recording. Death of soldier - Ennio Morricone<br>
+            <audio controls>
+                <source src="Death.mp3" type="audio/mp3">
+            </audio>
+
+
+            <h2>Video</h2>
+            <video controls>
+                <source src="story_of_a_soldier.mp4">
+            </video>
+
+            <div style="display:none;">
+                <img id="scream" width="220" height="277" src="shreyansh.jpg">
+                </div>
+                
+                <canvas id="myCanvas" width="240" height="297" style="border:1px solid grey;">
+                Sorry, your browser does not support canvas.
+                </canvas>
+                
+                <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+                const image = document.getElementById("scream");
+                
+                image.addEventListener("load", (e) => {
+                  ctx.drawImage(image, 10, 10, 150, 150);
+                });
+                </script>
+        </div>
+        <div>
+            <iframe src="embedded.html" height="800px" width="700px">This is not supported</iframe>
+        </div>
+    </div>
+    
+
+</body>
+</html>
