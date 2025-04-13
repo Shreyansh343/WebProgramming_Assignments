@@ -1,0 +1,10 @@
+.Box {
+    margin: 45px;
+    outline: 20px solid red;
+    border: 6px green solid;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    width: 400px;
+    height: 100px;
+}

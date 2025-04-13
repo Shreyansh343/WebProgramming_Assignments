@@ -1,0 +1,47 @@
+body
+{
+    margin: 50px;
+}
+
+.rainbowheader
+{
+    background-image: linear-gradient(to left,violet,indigo,blue,green,orange,red);
+    width:150px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    columns: 2;
+    column-rule-style: solid;
+    column-gap: 50pt;
+    column-rule-width: 5pt;
+}
+
+.ball
+{
+    fill:red;
+    cx:200px;
+    cy:200px;
+    r:30px;
+    animation: ballanim 4s ease-in-out infinite;
+}
+
+body
+{
+    background-image: url(wood.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    
+}
+
+@keyframes ballanim {
+    0% { transform: translate(0px, 0px); }
+    20% { transform: translate(0px,-100px);}
+    30% { transform: translate(0px,0px);}
+    40% { transform: translate(0px,-100px) skew(30deg,40deg);}
+    50% { transform: translate(0px,0px);}
+    80% {transform: translate(700px,0px) scale(2);}
+    100% {transform: translate(500px, 0px) rotate(90deg);}
+    }
+    svg { overflow: visible; }
